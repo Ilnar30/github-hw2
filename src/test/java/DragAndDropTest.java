@@ -13,7 +13,7 @@ public class DragAndDropTest {
     }
 
     @Test
-    void triangleTest() {
+    void rectangleTest() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo($("#column-b"));
         $("#column-a").shouldHave(text("B"));
